@@ -6,7 +6,7 @@ require 'capistrano-foreman'
 Gem::Specification.new do |spec|
   spec.name          = 'capistrano3-foreman'
   spec.version       = Capistrano::Foreman::VERSION
-  spec.authors       = ['Stefan Surzycki']
+  spec.authors       = ['Stefan Surzycki', 'Galaad Gauthier']
   spec.email         = ['stefan.surzycki@gmail.com']
   spec.description   = %q{Foreman support for Capistrano 3.x}
   spec.summary       = %q{Foreman support for Capistrano 3.x}
