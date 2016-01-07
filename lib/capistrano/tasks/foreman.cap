@@ -35,7 +35,14 @@ namespace :foreman do
   task :restart do
     on roles(:app) do |host|
       as :root do
-        execute :service, "#{fetch(:application)} start || service #{fetch(:application)} restart"
+        foreman_init_system = fetch(:foreman_init_system) || "service"
+
+        case foreman_init_system
+        when "service"
+          execute :service, "#{fetch(:application)} start || service #{fetch(:application)} restart"
+        when "initctl"
+          execute :initctl, "start #{fetch(:application)} || initctl restart #{fetch(:application)}"
+        end
       end
     end
   end
