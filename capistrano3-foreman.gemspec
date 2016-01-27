@@ -4,13 +4,13 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'capistrano-foreman'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'capistrano3-foreman'
+  spec.name          = 'capistrano3-foreman-precogs'
   spec.version       = Capistrano::Foreman::VERSION
   spec.authors       = ['Stefan Surzycki', 'Galaad Gauthier']
   spec.email         = ['stefan.surzycki@gmail.com']
   spec.description   = %q{Foreman support for Capistrano 3.x}
   spec.summary       = %q{Foreman support for Capistrano 3.x}
-  spec.homepage      = 'https://github.com/surzycki/capistrano-foreman'
+  spec.homepage      = 'https://github.com/Precogs-com/capistrano-foreman'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files`.split($/)
