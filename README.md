@@ -12,7 +12,7 @@ There be dragons, proceed at your own risk.
 
 Add this line to your application's Gemfile:
 
-    gem 'capistrano3-foreman'
+    gem 'capistrano3-foreman-precogs'
 
 And then execute:
 
@@ -20,7 +20,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install capistrano3-foreman
+    $ gem install capistrano3-foreman-precogs
 
 ## Usage
 
